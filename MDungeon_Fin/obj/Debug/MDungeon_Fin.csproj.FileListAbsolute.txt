@@ -1,0 +1,9 @@
+C:\Users\momma\OneDrive\Documents\ElevenFiftyProjects_Restart\MDungeon_Fin\MDungeon_Fin\bin\Debug\MDungeon_Fin.exe.config
+C:\Users\momma\OneDrive\Documents\ElevenFiftyProjects_Restart\MDungeon_Fin\MDungeon_Fin\bin\Debug\MDungeon_Fin.exe
+C:\Users\momma\OneDrive\Documents\ElevenFiftyProjects_Restart\MDungeon_Fin\MDungeon_Fin\bin\Debug\MDungeon_Fin.pdb
+C:\Users\momma\OneDrive\Documents\ElevenFiftyProjects_Restart\MDungeon_Fin\MDungeon_Fin\bin\Debug\MindDungeon_Lib.dll
+C:\Users\momma\OneDrive\Documents\ElevenFiftyProjects_Restart\MDungeon_Fin\MDungeon_Fin\bin\Debug\MindDungeon_Lib.pdb
+C:\Users\momma\OneDrive\Documents\ElevenFiftyProjects_Restart\MDungeon_Fin\MDungeon_Fin\obj\Debug\MDungeon_Fin.csproj.AssemblyReference.cache
+C:\Users\momma\OneDrive\Documents\ElevenFiftyProjects_Restart\MDungeon_Fin\MDungeon_Fin\obj\Debug\MDungeon_Fin.csproj.CoreCompileInputs.cache
+C:\Users\momma\OneDrive\Documents\ElevenFiftyProjects_Restart\MDungeon_Fin\MDungeon_Fin\obj\Debug\MDungeon_Fin.exe
+C:\Users\momma\OneDrive\Documents\ElevenFiftyProjects_Restart\MDungeon_Fin\MDungeon_Fin\obj\Debug\MDungeon_Fin.pdb

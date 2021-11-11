@@ -1,0 +1,6 @@
+C:\Users\momma\OneDrive\Documents\ElevenFiftyProjects_Restart\MDungeon_Fin\MindDungeon_Lib\bin\Debug\MindDungeon_Lib.dll
+C:\Users\momma\OneDrive\Documents\ElevenFiftyProjects_Restart\MDungeon_Fin\MindDungeon_Lib\bin\Debug\MindDungeon_Lib.pdb
+C:\Users\momma\OneDrive\Documents\ElevenFiftyProjects_Restart\MDungeon_Fin\MindDungeon_Lib\obj\Debug\MindDungeon_Lib.csproj.AssemblyReference.cache
+C:\Users\momma\OneDrive\Documents\ElevenFiftyProjects_Restart\MDungeon_Fin\MindDungeon_Lib\obj\Debug\MindDungeon_Lib.csproj.CoreCompileInputs.cache
+C:\Users\momma\OneDrive\Documents\ElevenFiftyProjects_Restart\MDungeon_Fin\MindDungeon_Lib\obj\Debug\MindDungeon_Lib.dll
+C:\Users\momma\OneDrive\Documents\ElevenFiftyProjects_Restart\MDungeon_Fin\MindDungeon_Lib\obj\Debug\MindDungeon_Lib.pdb
