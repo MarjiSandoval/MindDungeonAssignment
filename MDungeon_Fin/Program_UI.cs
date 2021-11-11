@@ -17,13 +17,13 @@ namespace MDungeon_Fin
         public static bool HasCompletedRoom1 = false;
         public static bool HasCompletedRoom2 = false;
         public static bool HaEnteedDoor1 = false;
-      
+        public static bool IsRunning = true;
 
         public static void Run()
         {
             bool IsLockedInRoom = false;
             Player player = new Player();
-            bool IsRunning = true;
+           
             while (IsRunning)
             {
                 if (!PlayerDeath)
@@ -60,7 +60,9 @@ namespace MDungeon_Fin
                     Console.WriteLine("First we need your characters name, hit enter when your done...:");
                     player.Name = Console.ReadLine();
                     Console.Clear();
-
+                    Console.WriteLine($"You selected a {player.SelectedCharacter.GetType().Name}. Press any key to continue");
+                    Console.ReadKey();
+                    Console.Clear();
                     Console.WriteLine("There is a big door ahead of you... Press the  'y' key to continue?");
                     var userInputY = Console.ReadLine();
                     if (userInputY =="Y".ToLower())
@@ -69,9 +71,6 @@ namespace MDungeon_Fin
                         while (IsLockedInRoom)
                         {
                             
-
-
-                           
                             switch (userInputY)
                             {
                                 case "y":
@@ -179,7 +178,7 @@ namespace MDungeon_Fin
                 {
                     BackToMainMenu();
                 }
-
+                
             }
 
 
@@ -233,9 +232,10 @@ namespace MDungeon_Fin
         private static bool GiantDragonWithMoney()
         {
             Console.Clear();
-            var FinPartOfStory = "sdkfnsdlkfnsdlfknsldfnsdlkfnsdlknfsdkl;fnsdnfsdf0";
+            var FinPartOfStory = "sdkfnsdlkfnsdlfknsldfnsdlkfnsdlknfsdkl;fnsdnfsdf0000";
             TheSlowLetterMaker(FinPartOfStory);
             Console.ReadKey();
+            IsRunning = false;
             return false;
         }
 
