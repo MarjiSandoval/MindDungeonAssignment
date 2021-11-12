@@ -73,13 +73,14 @@ namespace MDungeon_Fin
                             {
                                 case "y":
                                     Room room = new Room(new List<string> { "Door1", "Door2", "Door3", "Door4" });
-
-                                    Console.WriteLine("Please select the following\n" +
+                                    Console.Clear();
+                                    var openingScene = "You have entered a large room. In the room you find 4 doors.\n" +
+                                        "Which door will you choose to tempt fate?\n" +
                                         "1. Door 1\n" +
                                         "2. Door 2\n" +
                                         "3. Door 3\n" +
-                                        "4. Door 4\n");
-
+                                        "4. Door 4\n";
+                                    TheSlowLetterMaker(openingScene);
 
                                     var UserInputDoor = Console.ReadLine();
                                     switch (UserInputDoor)
@@ -271,7 +272,7 @@ namespace MDungeon_Fin
             Console.Clear();
             var BattleDescription="You have stumble upon a giant snake. Defeat the snake to get to the next room.\n" +
                 "The snake has launced a strike at you but you were able to get out of the way in time.\n" +
-                "You retalliate with your attack and take half the snake's hit point.\n" +
+                "You retaliate with your attack and take half the snake's hit point.\n" +
                 "The snakes now wrapping around you.\n" +
                 "You use your strongest attack and defeat the snake.\n" +
                 "Move on to the final room.";
