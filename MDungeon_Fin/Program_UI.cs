@@ -90,13 +90,13 @@ namespace MDungeon_Fin
                                             IsLockedInRoom = SpiderFight();
                                             break;
                                         case "2":
-                                            IsLockedInRoom = DeadEnd();
+                                            IsLockedInRoom = DeadEnd(); //you will start over
                                             break;
                                         case "3":
-                                            IsLockedInRoom = LockedDoor();
+                                            IsLockedInRoom = LockedDoor();//you will start over
                                             break;
                                         case "4":
-                                            IsLockedInRoom = QuickSandTrap();
+                                            IsLockedInRoom = QuickSandTrap();//you will start over
 
                                             break;
                                         default:
@@ -133,13 +133,13 @@ namespace MDungeon_Fin
                         switch (userInputDoor)
                         {
                             case "1":
-                                IsLockedInRoom = LavaTrap();
+                                IsLockedInRoom = LavaTrap(); //You will start over
                                 break;
                             case "2":
                                 IsLockedInRoom = GiantSnake();
                                 break;
                             case "3":
-                                SpikePit();
+                                SpikePit(); //You will start over
                                 break;
 
                             default:
@@ -166,7 +166,7 @@ namespace MDungeon_Fin
                                 LavaPit(); //you will have to start over
                                 break;
                             case "3":
-                                IsLockedInRoom = GiantDragonWithMoney();
+                                IsLockedInRoom = BossDragonWithMoney();
                                 break;
                             default:
                                 Console.WriteLine("Invalid Input, try again");
@@ -213,8 +213,10 @@ namespace MDungeon_Fin
         private static void GiantWithBaseballBat()
         {
             Console.Clear();
-            //put description here...
-            var nameOfDescriptionOfScene = "asdngskldfndfkn";
+            
+            var nameOfDescriptionOfScene = "You have found the door with a Giant and he's not happy that you have disturbed him.\n" +
+                "He swings his bat and misses the first time but you aren't so lucky the second time. You have been pancaked by the\n" +
+                "giant and his bat, better luck next time.";
             TheSlowLetterMaker(nameOfDescriptionOfScene);
 ;            Console.ReadKey();
             BackToMainMenu();
@@ -223,16 +225,21 @@ namespace MDungeon_Fin
         private static void LavaPit()
         {
             Console.Clear();
-            //put description here...
+            Console.WriteLine("You've fallen into a pit of Lava. Death is immediate.");
             Console.ReadKey();
             BackToMainMenu();
 
         }
 
-        private static bool GiantDragonWithMoney()
+        private static bool BossDragonWithMoney()
         {
             Console.Clear();
-            var FinPartOfStory = "sdkfnsdlkfnsdlfknsldfnsdlkfnsdlknfsdkl;fnsdnfsdf0000";
+            var FinPartOfStory = "...----------==========YOU HAVE REACHED THE BOSS==========----------...\n" +
+                "The Dragon takes his job of guarding this treasure of money seriously.\n" +
+                "He strikes at you with Fire Breath but you are able to roll out of the way.\n" +
+                "You use your special strike and take out his wing.\n" +
+                "He swings his tail at you but you are too fast and strike again defeating the Dragon.\n" +
+                "...----------==========YOU HAVE BEAT THE GAME AND WIN ALL THE MONEY!!!==========----------....";
             TheSlowLetterMaker(FinPartOfStory);
             Console.ReadKey();
             IsRunning = false;
@@ -243,7 +250,7 @@ namespace MDungeon_Fin
         {
             foreach (var letter in FinPartOfStory)
             {
-                Thread.Sleep(25);
+                Thread.Sleep(35);
                 Console.Write(letter);
             }
         }
@@ -279,7 +286,7 @@ namespace MDungeon_Fin
         private static bool LavaTrap()
         {
             Console.Clear();
-            Console.WriteLine("You've been melted by Lava. Start over.");
+            Console.WriteLine("You've fallen into a pit of Lava. Death is immediate.");
             PlayerDeath = true;
             return false;
         }
@@ -288,7 +295,7 @@ namespace MDungeon_Fin
         private static bool QuickSandTrap()
         {
             Console.Clear();
-            Console.WriteLine("You're trapped in Quick Sand. Start over.");
+            Console.WriteLine("You're trapped in Quick Sand. Try again.");
             PlayerDeath = true;
             BackToMainMenu();
             return false;
@@ -305,7 +312,7 @@ namespace MDungeon_Fin
         private static bool DeadEnd()
         {
             Console.Clear();
-            Console.WriteLine("This is a Dead End, Try again.Press any key....");
+            Console.WriteLine("This is a Dead End, Try again. Press any key....");
             Console.ReadKey();
             return true;
         }
@@ -315,8 +322,8 @@ namespace MDungeon_Fin
 
             Console.Clear();
             var spiderFight="You have stumble upon a giant spider. Defeat the spider to get to the next room.\n" +
-                "The spider spat venom at  you but you dodged it.\n" +
-                "You attack and defeat the spider and defested it.\n" +
+                "The spider spit venom at  you but you dodged it.\n" +
+                "You attack the spider and defeated it.\n" +
                 "Move to the next room.";
             TheSlowLetterMaker(spiderFight);
             Console.ReadKey();
