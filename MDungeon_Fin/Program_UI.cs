@@ -12,8 +12,6 @@ namespace MDungeon_Fin
     {
 
         private static bool PlayerDeath;
-        private static string attack;
-        private static string block;
         public static bool HasCompletedRoom1 = false;
         public static bool HasCompletedRoom2 = false;
         public static bool HaEnteedDoor1 = false;
